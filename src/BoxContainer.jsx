@@ -34,10 +34,12 @@ const BoxContainer = () => {
           <div
             onClick={(e) => onClickBox(e)}
             key={i}
-            className={`cursor-pointer size-16 sm:size-20 md:size-28 xl:size-32 rounded-lg border border-gray-700 duration-300 ${
+            className={`cursor-pointer size-16 sm:size-20 md:size-28 xl:size-32 rounded-lg border border-gray-700 duration-300 flex justify-center items-center ${
               i === 3 ? "col-span-3" : "col-span-1"
             }`}
-          ></div>
+          >
+            <p className="text-gray-500 font-semibold text-2xl">{i + 1}</p>
+          </div>
         );
       })}
     </div>
